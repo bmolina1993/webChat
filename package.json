@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "WebSocket",
     "JavaScript"
   ],
   "author": "Braian Molina<braian_gabriel_1993@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "socket.io": "4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.22"
+  }
 }
