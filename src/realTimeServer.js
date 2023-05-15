@@ -13,5 +13,7 @@ export const realtimeServer = (httpServer) => {
         message,
       });
     });
+
+    socket.emit("socketId", `socketId: ${socket.id} 🤫`);
   });
 };

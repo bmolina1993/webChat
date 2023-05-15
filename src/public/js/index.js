@@ -34,3 +34,7 @@ socket.on("message", ({ user, message }) => {
 
   allMessages.append(msg);
 });
+
+socket.on("socketId", (socketId) => {
+  console.log(socketId);
+});
